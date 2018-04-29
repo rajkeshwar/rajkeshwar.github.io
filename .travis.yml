@@ -6,7 +6,7 @@ node_js:
 
 branches:
   only:
-    - master
+    - gh-pages
 
 before_script:
   - npm i -g angular-cli-ghpages
