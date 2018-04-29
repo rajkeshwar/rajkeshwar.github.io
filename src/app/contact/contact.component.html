@@ -1,0 +1,12 @@
+<section id="contact" class="section scrollspy full-height">
+  <h3 class="page-title white-text teal">Contact</h3>
+  <div class="container">
+    <p *ngFor="let contact of contacts">
+      <a [href]="contact.href" data-position="top"  
+        class="btn-floating btn-large waves-effect waves-light brown tooltipped">
+        <i [class]="contact.icon"></i>
+      </a>
+      <a [href]="contact.href" class="hoverline">{{contact.label}}</a>
+    </p>
+  </div>
+</section>

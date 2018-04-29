@@ -1,0 +1,61 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav ng-class="hide-on-small-only">
+  <ul class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" aria-label="Navigate to the beginning of the page" 
+        routerLink="intro" class="brand-logo teal-text">
+        <h1>Rajkeshwar Prasad-*<span class="brown-text light">Full Stack Developer</span></h1>
+      </a>
+    </li>
+    <li class="bold" *ngFor="let route of routes">
+      <a aria-label="Navigate to the About section" 
+        [routerLink]="route.path" routerLinkActive="active"
+        class="waves-effect waves-dark {{route.theme}}">
+        <i class="{{route.icon}} small"></i><span>{{route.label}}</span>
+      </a>
+    </li>
+    <li class="bold"><a aria-label="Navigate to the Resume section" 
+      href="assets/Rajkeshwar-Resume.pdf" target="_blank"
+      class="waves-effect waves-dark grey-text text-darken-3">
+      <i class="mdi-action-description small"></i><span>Resume</span></a>  
+    </li>
+  </ul>
+</nav>
+<nav class="hide-on-large only trigger z-depth-1"> 
+  <a aria-label="Toggle visibility of the mobile navbar" data-activates="slide-out" class="button-collapse">
+    <i class="mdi-navigation-menu" (click)="openNav(true)"></i>
+  </a>
+  <div class="name-title">
+    <a id="name" aria-label="Navigate to the beginning of the page" class="teal-text">Rajkeshwar Prasad</a>
+    <span
+      class="brown-text light">Full Stack Developer</span>
+  </div>
+</nav>
+<nav class="hide-on-large only"> 
+  <ul id="slide-out" style="width:190px" #sidenav
+    class="side-nav" [@slide]="isNavOpen">
+    <li class="bold"><a aria-label="Navigate to the intro section" 
+      routerLink="intro" routerLinkActive="active" (click)="openNav(false)"
+      class="waves-effect waves-dark teal-text">
+      <i class="mdi-action-description small"></i><span>Intro</span></a>
+    </li>
+    <li class="bold" *ngFor="let route of routes">
+      <a [routerLink]="route.path" routerLinkActive="active" (click)="openNav(false)"
+        class="waves-effect waves-dark {{route.theme}}">
+        <i class="{{route.icon}} small"></i><span>{{route.label}}</span>
+      </a>
+    </li>
+    <li class="bold"><a aria-label="Navigate to the Resume section" 
+      href="assets/Rajkeshwar-Resume.pdf" target="_blank"
+      class="waves-effect waves-dark grey-text text-darken-3">
+      <i class="mdi-action-description small"></i><span>Resume</span></a>
+    </li>
+  </ul>
+</nav>
+
+<div id="sidenav-overlay" [ngStyle]="{'opacity':isNavOpen ? 1:0}" (click)="openNav(false)"></div>
+
+<!-- Main Content-->
+<main>
+  <router-outlet></router-outlet>
+</main>

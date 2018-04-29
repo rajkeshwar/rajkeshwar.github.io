@@ -1,0 +1,15 @@
+<section id="skills" class="section scrollspy">
+  <h3 class="page-title white-text teal">Skills</h3>
+  <div class="container">
+    <div class="card" *ngFor="let cat of skills">
+      <div class="card-content">
+        <h4 class="brown-text light">{{cat.category}}</h4>
+        <div class="row text-center">
+          <div class="col s4 m2" *ngFor="let skill of cat.skills">
+            <img [alt]="skill.alt" [src]="skill.icon" class="responsive-img">{{skill.label}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

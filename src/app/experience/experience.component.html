@@ -1,0 +1,29 @@
+<section id="experience" class="section scrollspy"> 
+  <h3 class="page-title white-text teal">Experience</h3>
+  <div class="container">
+      <div class="card" *ngFor="let exp of experiences">
+        <div class="card-content">
+          <div class="row">
+            <!-- <div class="col s12 m2">
+              <a href="http://wespire.com" target="_blank">
+                <img alt="WeSpire logo" src="assets/img/wespire-logo.jpg" class="responsive-img center-block">
+              </a>
+            </div> -->
+            <div class="col s12 m10">
+              <p>
+                <span class="card-title">
+                  <a href="#" target="_blank" class="teal-text hoverline">{{exp.name}}</a>
+                </span>
+              </p>
+            </div>
+          </div>
+          <div class="role brown-text">{{exp.role}}</div>
+          <p><em class="grey-text" [innerHTML]="exp.description|StringConcat|markdown"></em></p>
+          <div class="markdown" [innerHTML]="exp.markdown|StringConcat|markdown"></div>
+        </div>
+        <div class="card-action">
+          <span [innerHTML]="exp.duration|StringConcat|markdown"></span>
+        </div>
+      </div>
+  </div>
+</section>
