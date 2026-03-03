@@ -16,6 +16,10 @@ sass:
   sass_dir: _scss
   style: compressed
 
+# Explicitly include files Jekyll would otherwise ignore
+include:
+  - Resume.pdf
+
 # Plugins
 plugins:
   - jekyll-sitemap
@@ -28,3 +32,4 @@ exclude:
   - vendor
   - .git
   - README.md
+  - _scss

@@ -15,10 +15,8 @@
        aria-label="{{ cert.name }} by {{ cert.issuer }} — view on Credly">
       <img
         class="cert-logo"
-        src="{{ cert.badge_img }}"
-        alt="{{ cert.issuer }} badge"
-        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <span class="cert-logo-fallback" style="display:none;font-size:2rem;align-items:center;justify-content:center;width:52px;height:52px;">{{ cert.fallback }}</span>
+        src="{{ cert.badge_img | relative_url }}"
+        alt="{{ cert.name }} badge" />
       <div class="cert-info">
         <p class="cert-name">{{ cert.name }}</p>
         <p class="cert-issuer">{{ cert.issuer }}</p>
