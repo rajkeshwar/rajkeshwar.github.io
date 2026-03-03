@@ -427,8 +427,8 @@ section {
   width: 52px; height: 52px;
   border-radius: 8px;
   object-fit: contain;
-  background: white;
-  padding: 4px;
+  background: var(--border);
+  padding: 1px;
   flex-shrink: 0;
 }
 .cert-name { font-size: .9rem; font-weight: 600; color: var(--white); line-height: 1.4; margin-bottom: .2rem; }
