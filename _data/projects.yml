@@ -1,0 +1,19 @@
+- num: "01"
+  name: Search & Chatbot UI — ING Bank
+  desc: "Microservices-based chatbot with custom Spring Boot API wrapper and framework-agnostic Web Component frontend. Serves 360K+ monthly users with AI intent integration, rate limiting, and caching."
+  tech: [Spring Boot, ElasticSearch, PostgreSQL, Lit, Docker]
+
+- num: "02"
+  name: CST UI Framework — DBS Bank
+  desc: "Enterprise scaffolding tool adopted by 30+ teams, with Spring Boot backend services, JPQL optimisation, and cloud-ready deployment. Reduced development time by 45%."
+  tech: [Spring Boot, Hibernate/JPA, Angular 7, AWS, PCF]
+
+- num: "03"
+  name: OWB Tracking Dashboard — Kanerika
+  desc: "Real-time courier tracking system with Spring Boot backend and WebSocket endpoints, handling 10K+ daily orders for Nike, Oasis, and Reebok."
+  tech: [Spring Boot, JPA/Hibernate, WebSocket, Angular, D3.js]
+
+- num: "04"
+  name: COMPAS Platform — Siemens
+  desc: "Enterprise electrical component configurator with Java Spring backend, EhCache optimisation, and SAP integration for product configuration workflows."
+  tech: [Java Spring, EhCache, REST APIs, Eclipse RCP]

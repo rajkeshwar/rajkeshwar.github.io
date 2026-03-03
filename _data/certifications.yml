@@ -1,0 +1,23 @@
+- name: Generative AI Leader Certification
+  issuer: Google Cloud
+  credly_url: https://www.credly.com/badges/06f13cdc-a256-488d-bc7d-09edc4fea96b/public_url
+  badge_img: https://images.credly.com/size/340x340/images/9f50d5fe-d20f-4b56-95af-f588b2a7be70/image.png
+  fallback: "🌐"
+
+- name: Associate Cloud Engineer
+  issuer: Google Cloud
+  credly_url: https://www.credly.com/badges/26b4d4a8-794d-48cb-bbe8-a36f36b487d3/public_url
+  badge_img: https://images.credly.com/size/340x340/images/08096465-cbfc-4c3e-93e5-93c5aa61f23e/image.png
+  fallback: "☁️"
+
+- name: AWS Certified AI Practitioner
+  issuer: Amazon Web Services
+  credly_url: https://www.credly.com/badges/ee0ab227-0bbe-45fd-b2f0-718e17221af6/public_url
+  badge_img: https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de57f2aa898f/image.png
+  fallback: "☁️"
+
+- name: Oracle Certified Professional, Java SE 6
+  issuer: Oracle
+  credly_url: https://www.credly.com/badges/441dec01-6efb-4166-9478-ce521ffedf38/public_url
+  badge_img: https://images.credly.com/size/340x340/images/3b7e0c92-5683-44e9-b3dc-7bcf25c7bde4/Oracle-Certification-badge_OC-Professional600X600.png
+  fallback: "☕"

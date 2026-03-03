@@ -1,0 +1,17 @@
+- label: Backend & APIs
+  tags: [Java (10+ yrs), Spring Boot (8+ yrs), Hibernate/JPA, Node.js, Express.js, RESTful APIs, WebSocket, PostgreSQL, Oracle, MySQL]
+
+- label: Frontend
+  tags: [React 18 (8+ yrs), Angular 12+ (10+ yrs), Vue 3, TypeScript (9+ yrs), Web Components, Lit, HTML5/CSS3, Tailwind CSS, Material-UI]
+
+- label: Architecture
+  tags: [Micro Frontends, Module Federation, Microservices, Design Systems, SSR, PWA, WCAG 2.1]
+
+- label: DevOps & Cloud
+  tags: [Docker, Kubernetes, GitLab CI/CD, GitHub Actions, Jenkins, AWS, Azure, PCF]
+
+- label: Testing
+  tags: [Jest, JUnit, Cypress, Playwright, Storybook, SonarQube, Lighthouse]
+
+- label: Agile & AI Tools
+  tags: [Scrum / SAFe, Kanban, Jira, Confluence, ChatGPT, GitHub Copilot]

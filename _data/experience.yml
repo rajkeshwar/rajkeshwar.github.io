@@ -1,0 +1,54 @@
+- id: ing
+  company: ING GmbH (via HCLTech)
+  role: Lead Fullstack Consultant
+  period: "January 2019 — Present"
+  location: "Nürnberg, Germany"
+  bullets:
+    - "Built Spring Boot chatbot microservice API serving 360K+ monthly users with custom AI service wrapper, error handling, rate limiting, and caching strategies"
+    - "Implemented robust exception handling, @Transactional management, and custom Spring interceptors for logging and monitoring"
+    - "Built framework-agnostic Web Components (Lit) chatbot UI integrated across 15+ banking applications, cutting customer support tickets by 25%"
+    - "Architected large-scale enterprise platforms and data-driven UI systems for mobility and financial domains"
+    - "Established CI/CD pipelines reducing deployment cycles from 3 hours to 15 minutes using Docker and GitLab runners"
+  tech: [Spring Boot, Hibernate/JPA, ElasticSearch, PostgreSQL, Lit, TypeScript, Docker, GitLab CI/CD]
+
+- id: dbs
+  company: DBS Asia Hub 2
+  role: Senior Associate
+  period: "June 2017 — November 2018"
+  location: "Hyderabad, India"
+  bullets:
+    - "Architected CST UI Framework with Spring Boot & Angular; scaffolding tools adopted by 30+ teams to boost DBS efficiency"
+    - "Built reusable Angular component library with 50+ components, standardised REST API integration patterns, reducing development time by 45%"
+    - "Optimised JPQL queries and Hibernate caching strategies, reducing API response times by 30% in high-transaction banking applications"
+  tech: [Spring Boot, Hibernate/JPA, MySQL, Angular 7, TypeScript, AWS, Pivotal Cloud Foundry, JUnit]
+
+- id: kanerika
+  company: Kanerika Software
+  role: UI Architect
+  period: "June 2016 — June 2017"
+  location: "Hyderabad, India"
+  bullets:
+    - "Designed OWB dashboard with Spring Boot, REST & WebSockets for real-time tracking of 10K+ daily Nike, Oasis & Reebok orders"
+    - "Built Angular library consumed by 8 apps with backend API integration patterns standardising UI/UX across product suite"
+    - "Implemented JPA/Hibernate entity relationships and optimised N+1 query issues using fetch strategies and JPQL joins"
+  tech: [Angular 2/4, TypeScript, D3.js, WebSocket, Oracle, PostgreSQL, RxJS, Bootstrap]
+
+- id: boa
+  company: Bank of America India
+  role: Senior Software Developer
+  period: "September 2014 — June 2016"
+  location: "Hyderabad, India"
+  bullets:
+    - "Contributed to enterprise Angular UI framework backed by Java Spring services across the banking platform"
+    - "Built RESTful APIs with Java Spring for check processing services, implementing complex process management and audit logging"
+  tech: [Spring Boot, JPA/Hibernate, AngularJS 1.x, JavaScript, RESTful APIs, Jenkins, Perforce]
+
+- id: earlier
+  company: Siemens & Ramyam
+  role: Senior Software Developer
+  period: "September 2011 — August 2014"
+  location: "India"
+  bullets:
+    - "<strong>Siemens Information Systems</strong> (Jul 2013–Aug 2014) — Enterprise product configurator COMPAS with Java Spring, EhCache, REST APIs, and SAP integration"
+    - "<strong>Ramyam Intelligence Lab</strong> (Sep 2011–Jul 2013) — Data intelligence platform built with Spring, Hibernate, Oracle, and AWS S3"
+  tech: [Java Spring, Hibernate, Oracle, AWS S3, EhCache, Maven, Jenkins, Eclipse RCP]

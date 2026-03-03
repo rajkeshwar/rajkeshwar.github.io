@@ -1,0 +1,37 @@
+<section id="certifications" aria-labelledby="cert-h">
+  <div class="section-header">
+    <span class="section-num">04.</span>
+    <h2 class="section-title" id="cert-h">Certifications</h2>
+    <div class="section-line" aria-hidden="true"></div>
+  </div>
+
+  <div class="cert-grid" role="list">
+    {% for cert in site.data.certifications %}
+    <a class="cert-card fade-in"
+       href="{{ cert.credly_url }}"
+       target="_blank"
+       rel="noopener noreferrer"
+       role="listitem"
+       aria-label="{{ cert.name }} by {{ cert.issuer }} — view on Credly">
+      <img
+        class="cert-logo"
+        src="{{ cert.badge_img }}"
+        alt="{{ cert.issuer }} badge"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <span class="cert-logo-fallback" style="display:none;font-size:2rem;align-items:center;justify-content:center;width:52px;height:52px;">{{ cert.fallback }}</span>
+      <div class="cert-info">
+        <p class="cert-name">{{ cert.name }}</p>
+        <p class="cert-issuer">{{ cert.issuer }}</p>
+        <span class="cert-link">
+          View on Credly
+          <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" width="10" height="10" aria-hidden="true"><path d="M2 10L10 2M10 2H4M10 2v6"/></svg>
+        </span>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <p class="education-note">
+    MCA — Calcutta Institute of Technology, WBUT (2010) · Anabin-compatible with German Master's degree
+  </p>
+</section>

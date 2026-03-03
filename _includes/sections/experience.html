@@ -1,0 +1,41 @@
+<section id="experience" aria-labelledby="exp-h">
+  <div class="section-header">
+    <span class="section-num">01.</span>
+    <h2 class="section-title" id="exp-h">Where I've Worked</h2>
+    <div class="section-line" aria-hidden="true"></div>
+  </div>
+
+  <div class="exp-tabs">
+    <div class="exp-tab-list" role="tablist" aria-label="Companies">
+      {% for job in site.data.experience %}
+      <button
+        class="exp-tab-btn{% if forloop.first %} active{% endif %}"
+        role="tab"
+        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+        aria-controls="panel-{{ job.id }}"
+        id="tab-{{ job.id }}">
+        {{ job.company | split: " " | first }}{% if job.id == "boa" %} BofA{% endif %}{% if job.id == "earlier" %} Earlier{% endif %}
+      </button>
+      {% endfor %}
+    </div>
+
+    <div class="exp-content">
+      {% for job in site.data.experience %}
+      <div id="panel-{{ job.id }}" class="exp-panel{% if forloop.first %} active{% endif %}" role="tabpanel" aria-labelledby="tab-{{ job.id }}">
+        <p class="exp-role">{{ job.role }} <span>@ {{ job.company }}</span></p>
+        <p class="exp-date">{{ job.period }} · {{ job.location }}</p>
+        <ul class="exp-bullets">
+          {% for bullet in job.bullets %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+        <div class="exp-tech">
+          {% for t in job.tech %}
+          <span class="tech-pill">{{ t }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

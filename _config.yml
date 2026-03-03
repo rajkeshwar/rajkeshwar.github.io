@@ -1,0 +1,30 @@
+# Site Settings
+title: Rajkeshwar Prasad
+description: Lead Fullstack Engineer specializing in Java/Spring Boot, React/Angular and Microservices for global financial institutions.
+url: https://rajkeshwar.github.io
+baseurl: ""
+author: Rajkeshwar Prasad
+email: rajkeshwar.pd@gmail.com
+github_username: rajkeshwar
+linkedin_username: rajkeshwar
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+sass:
+  sass_dir: _scss
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
