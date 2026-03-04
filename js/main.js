@@ -1,3 +1,35 @@
+// ── Theme Toggle ──────────────────────────────────────────────
+const toggleBtn = document.getElementById('theme-toggle');
+const html = document.documentElement;
+
+// Apply saved theme immediately (before paint to avoid flash)
+const savedTheme = localStorage.getItem('theme');
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+html.setAttribute('data-theme', initialTheme);
+updateToggleLabel(initialTheme);
+
+if (toggleBtn) {
+  toggleBtn.addEventListener('click', () => {
+    const current = html.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateToggleLabel(next);
+  });
+}
+
+function updateToggleLabel(theme) {
+  if (!toggleBtn) return;
+  if (theme === 'dark') {
+    toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+    toggleBtn.setAttribute('title', 'Switch to light mode');
+  } else {
+    toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+    toggleBtn.setAttribute('title', 'Switch to dark mode');
+  }
+}
+
 // ── Experience Tab Switching ──────────────────────────────────
 const tabBtns = document.querySelectorAll('.exp-tab-btn');
 const panels  = document.querySelectorAll('.exp-panel');
@@ -50,4 +82,4 @@ const onScroll = () => {
 };
 
 window.addEventListener('scroll', onScroll, { passive: true });
-onScroll(); // run on load
+onScroll();
