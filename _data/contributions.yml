@@ -1,0 +1,74 @@
+# Open Source Contributions
+# To add a new entry, copy a block and fill in the fields.
+# type: "pr" shows a git-merge icon, "issue" shows a circle icon
+
+- project: ING Lion
+  url: https://github.com/ing-bank/lion
+  desc: Web Components library
+  prs:
+    - label: mdjs sandbox demos
+      url: https://github.com/ing-bank/lion/pull/2503
+      type: pr
+    - label: Localization loader
+      url: https://github.com/ing-bank/lion/pull/2477
+      type: pr
+    - label: Locale resolution util
+      url: https://github.com/ing-bank/lion/pull/2430
+      type: pr
+    - label: Localize support
+      url: https://github.com/ing-bank/lion/pull/2334
+      type: pr
+
+- project: axios-docs
+  url: https://github.com/axios/axios-docs
+  desc: Axios documentation
+  prs:
+    - label: Clarify auth behavior with axios instances
+      url: https://github.com/axios/axios-docs/pull/315
+      type: pr
+
+- project: Webpack Dev Server
+  url: https://github.com/webpack/webpack-dev-server
+  desc: webpack/webpack-dev-server
+  prs:
+    - label: Performance / stability PR
+      url: https://github.com/webpack/webpack-dev-server/pull/2516
+      type: pr
+
+- project: modernweb-dev
+  url: https://github.com/modernweb-dev/example-projects
+  desc: example-projects
+  prs:
+    - label: Upgraded lit-element-ts-esbuild
+      url: https://github.com/modernweb-dev/example-projects/pull/1016
+      type: pr
+
+- project: PrimeNG / PrimeReact
+  url: https://github.com/primefaces/primeng
+  desc: primefaces
+  prs:
+    - label: "Issue #17084"
+      url: https://github.com/primefaces/primeng/issues/17084
+      type: issue
+    - label: "Issue #6016"
+      url: https://github.com/primefaces/primereact/issues/6016
+      type: issue
+    - label: "Issue #5393"
+      url: https://github.com/primefaces/primereact/issues/5393
+      type: issue
+
+- project: Plnkr
+  url: https://github.com/plnkr/feedback
+  desc: plnkr/feedback
+  prs:
+    - label: Secure component playgrounds
+      url: https://github.com/plnkr/feedback/issues/624
+      type: issue
+
+- project: Techtonica
+  url: https://github.com/Techtonica/curriculum
+  desc: curriculum
+  prs:
+    - label: Individuals table in mern-pern-project
+      url: https://github.com/Techtonica/curriculum/pull/2610
+      type: pr
